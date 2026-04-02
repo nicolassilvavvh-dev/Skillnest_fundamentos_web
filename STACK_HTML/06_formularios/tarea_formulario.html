@@ -1,0 +1,42 @@
+<!-- Tarea formulario: Crear un formalario de registro para un sitio web
+para reservar uns hora al doctor debe incluir: Nombre del paciente,
+fecha de cita,
+Fecha_nacimiento, sintomas del paciente, ciudad (lista_des)
+Casilla de verificacion -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="#" method="POST">
+        <label for="nombre">Nombre Del paciente:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br><br>
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        <br><br>
+        <label for="fecha_nacimiento">Fecha de la cita:</label>
+        <input type="date" id="fecha_cita" name="fecha_cita">
+        <br><br>
+        <label for="sintoma">Sintomas del paciente</label>
+        <input type="text" id="Sintomas" name="sintomas">
+        <br><br>
+        <label for="ciudad">ciudad del paciente</label>
+        <select id="ciudad" name="ciudad">
+            <option>Santiago</option>
+            <option>valparaiso</option>
+            <option>temuco</option>
+            <option>La serena</option>
+            </select>
+        <br><br>
+        <input type="checkbox" id="acepto" name="acepto">
+        <label for="acepto">Acepto los términos y condiciones</label>
+    </form>
+</body>
+
+</html>
