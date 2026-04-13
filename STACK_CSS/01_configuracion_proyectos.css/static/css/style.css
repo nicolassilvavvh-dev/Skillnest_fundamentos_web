@@ -1,0 +1,9 @@
+h1 {
+    color: rgb(116, 10, 223); /*Color de texto*/
+    font-size: 50px; /*Tamaño de fuente */
+}
+
+p {
+    color: blue;
+    font-size: 18;
+}
