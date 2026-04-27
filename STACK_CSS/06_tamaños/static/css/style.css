@@ -103,5 +103,25 @@
 .banner {
    height: 200px;
    width: 100%;
-   background: red url("/STACK_CSS/06_tamaños/static/images/descarga.png") no-repeat fixed center;
+   background: red url("/STACK_CSS/06_tamaños/static/images/descarga.png") no-repeat center center;
+   background-size: 100%;
+}
+
+/*🟫 Bordes y estilos */
+
+.aceptar {
+   border: 2px dotted green;
+}
+.articulo {
+   border: 1px solid black;
+}
+
+🟢 Bordes redondeados
+
+.button_redondeado {
+   border-radius: 5px;
+}
+
+.caja_redondeado{
+   border-radius: 50%;
 }
