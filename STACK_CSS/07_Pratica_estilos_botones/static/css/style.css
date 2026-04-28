@@ -1,0 +1,47 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   /* Contabiliza los bordes*/
+   /*outline: solid 1px red;*/
+}
+
+.container{
+   padding: 30px;
+}
+
+.boton_redondeado {
+   padding: 10px 40px;
+   border-radius: 15px; /* redondea esquinas*/
+   cursor: pointer;
+   text-align: center;
+   cursor: pointer;
+   margin-left: 530px; 
+   margin-top: 60px;
+}
+
+.caja_redondeado {
+   width: 40px;
+   height: 40px;
+   padding: 10px 16px;
+   background-color: #F8A504;
+   font-weight: bold;
+   border-radius: 50%; /* 50% de radius: circulo perfecto*/
+   cursor: pointer;
+   margin-left: 575px;
+   margin-top: 5px;
+   margin-bottom: 10px;
+   }
+
+.azul{
+   margin-left: 520px;
+   width: 150px;
+   height: 50px;
+   background-color: rgb(0, 0, 255);
+   box-shadow: 5px 5px 5px gray;
+   cursor: pointer;
+   border: none;
+}
+.blanco{
+   color: white;
+}

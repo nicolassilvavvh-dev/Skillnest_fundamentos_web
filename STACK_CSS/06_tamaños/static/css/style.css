@@ -27,6 +27,10 @@
    padding: 20px;
 }
 
+.row{
+   padding: 30px;
+}
+
 /*Tamaño ejemplo CSS*/
 
 .aceptar {
@@ -109,19 +113,61 @@
 
 /*🟫 Bordes y estilos */
 
-.aceptar {
-   border: 2px dotted green;
+.cancelar {
+   border: 2px dotted red; /* dotted: linea segmentada*/
+   padding: 15px;
+   cursor: pointer;
 }
 .articulo {
-   border: 1px solid black;
+   border: 2px solid black; /* solid: linea solida*/
+   height: 50px;
+   width: 100px;
 }
 
-🟢 Bordes redondeados
+/*🟢 Bordes redondeados*/
 
-.button_redondeado {
-   border-radius: 5px;
+.boton_redondeado {
+   padding: 10px 40px;
+   border-radius: 15px; /* redondea esquinas*/
+   cursor: pointer;
 }
-
-.caja_redondeado{
-   border-radius: 50%;
+.caja_redondeado {
+   width: 40px;
+   height: 40px;
+   padding: 10px 16px;
+   background-color: blue;
+   font-weight: bold;
+   color: white;
+   border-radius: 50%; /* 50% de radius: circulo perfecto*/
+   cursor: pointer;;
+}
+.cajitas{
+   width: 150px;
+   height: 40px;
+   outline: solid 1px purple;
+}
+.box1{background-color: rgba(8, 228, 228, 0.452);
+   padding: 10px; /*Padding aplicado a todos los lados*/
+}
+.box2{background-color: rgba(255, 0, 13, 0.404);
+   padding-top: 0px; /*Espacio interno: arriba*/
+   padding-right: 5px; /*Espacio interno: derecha*/
+   padding-bottom: 0px; /*Espacio interno: abajo*/
+   padding-left: 5px; /*Espacio interno: izquierda*/
+   /*padding: 0px 5px 0px 5px --> Aplicando en todos los lados*/
+   /*padding: 0px 5px --> 0px del eje (y) y 5px del eje (x)*/
+}
+.box3{
+   background-color: rgba(6, 112, 6, 0.377);
+   margin: 10px; /*Margen externp: Separa elementos*/
+}
+.box4{
+   background-color: rgba(12, 12, 151, 0.322);
+   margin: 0px 20px; /* eje x modificado con margin */
+   padding: 5px 0px; /* eje y modificado con padding*/
+}
+.box5{ 
+   background-color: rgba(0, 255, 255, 0.397);
+   float: left;
+   width: 30%;
 }
