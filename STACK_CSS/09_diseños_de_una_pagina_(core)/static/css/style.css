@@ -89,3 +89,6 @@
 .span{
    display: block;
 }
+.hidden{
+   overflow: hidden;
+}
