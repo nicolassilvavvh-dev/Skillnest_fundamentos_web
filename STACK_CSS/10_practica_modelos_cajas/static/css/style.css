@@ -1,0 +1,60 @@
+.contenedor {
+   text-align: center;
+}
+/*--------------------------------------- */
+/*----------------SITIO INDEX------------ */
+/*--------------------------------------- */
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+   outline: solid 1px black;
+}
+
+
+.header{
+   background-color: #1F8613;
+   color: white;
+   padding: 20px 20px;
+   text-align: center;
+   margin-left: 50px;
+   margin-right: 50px;
+   margin-top: 20px;
+   margin-bottom: 20px ;
+}
+
+.nav {
+   background-color: #2E5FDD;
+   padding: 10px 5px;
+   margin-left: 50px;
+   width: 200px;
+   height: 500px;
+   text-align: center;
+   display: inline-block;
+}
+
+.boton {
+
+   background-color: #FDED2F;
+   color: black;
+   padding: 10px 40px;
+   margin-top: 20px;
+   border-radius: 15px; /* redondea esquinas*/
+   cursor: pointer;
+   text-decoration: none;
+}
+.nav2{
+   background-color: #E32014;
+   padding: 10px 20px;
+   margin-left: 25px;
+   width: 1035px;
+   height: 200px;
+   text-align: center;
+   display: inline-block;
+   vertical-align: top;
+}
+.span{
+   display: inline-block;
+   margin-top: 35px
+}
