@@ -1,0 +1,76 @@
+.contenedor {
+   text-align: center;
+}
+/*--------------------------------------- */
+/*----------------SITIO INDEX------------ */
+/*--------------------------------------- */
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   display: flex;
+   flex-direction: column;
+      font-family: Arial, sans-serif;
+}
+.header{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   background-color: #34495E;
+   color: white;
+   padding: 40px 0px;
+}
+.box{
+   background-color: #204875;
+   color: white;
+   padding: 10px ;
+   text-align: center;
+}
+.papaya{
+   background-color: #ececec;
+   padding: 10px;
+   margin: 5%;
+   border-radius: 5px;
+   box-shadow: 5px 5px 5px gray;
+   text-align: center;
+}
+
+.sans{
+   background-color: #E67E22;
+   color: white;
+   padding: 60px;
+   border-radius: 5px;
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.caja_inferior{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.muffet{
+   background-color:#D35400;
+   color: white;
+   padding: 30px 129px;
+   border-radius: 5px;
+}
+.span{
+   display: block;
+}
+.hidden{
+   overflow: hidden;
+}
+.column{
+flex-direction: column;
+}
+.row{
+   flex-direction: row;
+}
+.center{
+   justify-content: center;
+}
