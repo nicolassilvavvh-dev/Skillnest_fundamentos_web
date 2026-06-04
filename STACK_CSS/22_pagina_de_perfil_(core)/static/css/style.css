@@ -46,6 +46,13 @@
    margin-left: 10px;
 }
 
+.hover2 {
+   transition: transform 0.3s ease, margin-left 1s ease
+}
+.hover2:hover {
+   transform: scale(1.2);
+   /* .1 añade 10% en tamaño */
+}
 .boton-principal {
    background-color: #3498DB;
    color: white;
@@ -171,6 +178,17 @@
    box-shadow: 0 5px 15px rgba(163, 163, 163, 0.5);
 }
 
+.tarjeta-conexiones-2 {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   background-color: white;
+   padding: 20px;
+   /* Da espacio interno para que no toque los bordes */
+   border-radius: 10px;
+   box-shadow: 0 5px 15px rgba(163, 163, 163, 0.5);
+   margin-top: 20px;
+}
 .row {
    display: flex;
    align-items: center;
