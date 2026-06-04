@@ -1,0 +1,229 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+.body{
+   background-color: rgb(197, 197, 197);
+}
+.barra-navegación {
+   display: flex;
+   justify-content: space-between;
+   background-color: #2C3E50;
+   align-items: center;
+   padding: 10px 30px;
+   box-shadow: 0 1px 3px gray;
+   color: white;
+}
+
+
+.logotipo {
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.nav a {
+   text-decoration: none;
+   color: white;
+   font-weight: 500;
+}
+
+.hover {
+   transition: transform 0.3s ease, margin-left 1s ease
+}
+
+.hover:hover {
+   transform: scale(1.2);
+   /* .1 añade 10% en tamaño */
+   margin-left: 10px;
+}
+
+.boton-principal {
+   background-color: #3498DB;
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   font-size: 1rem;
+   font-weight: 600;
+   cursor: pointer;
+   border-radius: 6px;
+   transition: transform 0.3s ease, margin-left 1s ease
+}
+
+.boton-principal:hover {
+   transform: scale(1.2);
+   /* .1 añade 10% en tamaño */
+   margin-left: 10px;
+}
+
+.blue {
+   color: #2563eb;
+}
+
+.contenedor-principal {
+   display: flex;
+}
+
+.tarjeta-perfil {
+   width: 600px;
+   margin-left: 20px;
+   display: flex;
+}
+
+.caja {
+   position: relative;
+   color: white;
+   background-color: white;
+   font-weight: bold;
+   width: 600px;
+   height: 400px;
+   border-radius: 10px;
+   overflow: hidden;
+   /*elementos*/
+   box-shadow: 0 5px 15px rgb(163, 163, 163);
+   margin-top: 40px;
+}
+
+.caja p {
+   color: black;
+}
+
+.azul {
+   background-color: #008DD2;
+   height: 30%;
+}
+
+.sans {
+   position: absolute;
+   /* se ancla exactamente a la esquina superior derecha de la ventana modal*/
+   top: 60px;
+   right: 250px;
+   color: white;
+   width: 110px;
+   height: 110px;
+   border-radius: 50%;
+   font-weight: bold;
+   font-size: 14px;
+   cursor: pointer;
+   border: solid 5px white;
+}
+
+.descripcion-tarjeta {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.algo {
+   color: rgb(15, 15, 15);
+   margin-top: 60px;
+
+}
+
+.algo2 {
+   color: rgba(41, 41, 41, 0.459);
+   text-align: center;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+.algo3 {
+   color: rgb(31, 31, 31);
+}
+
+.a {
+   text-decoration: none;
+   color: #008DD2;
+   margin-top: 10px;
+}
+
+.columna-izquierda {
+   display: flex;
+   flex: 2;
+   justify-content: center;
+}
+
+.columna-derecha {
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   width: 100%;
+   margin-top: 20px;
+}
+
+.tarjeta-conexiones {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   background-color: white;
+   padding: 20px;
+   /* Da espacio interno para que no toque los bordes */
+   border-radius: 10px;
+   box-shadow: 0 5px 15px rgba(163, 163, 163, 0.5);
+}
+
+.row {
+   display: flex;
+   align-items: center;
+   /* Centra botones y texto verticalmente */
+   justify-content: space-between;
+}
+
+.row h2 {
+   font-size: 16px;
+   color: #333;
+}
+
+/* Botón "Ver todas" que faltaba en tu CSS */
+.btn {
+   border: 2px solid #008DD2;
+   color: #008DD2;
+   background-color: transparent;
+   padding: 4px 12px;
+   border-radius: 5px;
+   font-size: 12px;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.row-contacto {
+   display: flex;
+   align-items: center;
+   /* Alinea la imagen con el nombre */
+   gap: 15px;
+   /* Espacio entre imagen y texto */
+   color: #555;
+   font-weight: bold;
+}
+
+.imagen {
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.botones {
+   display: flex;
+   gap: 10px;
+}
+
+.boton {
+   cursor: pointer;
+   background-color: #f3f4f6;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
