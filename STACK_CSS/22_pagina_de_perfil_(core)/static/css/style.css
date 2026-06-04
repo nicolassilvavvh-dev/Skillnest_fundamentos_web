@@ -173,7 +173,6 @@
    gap: 20px;
    background-color: white;
    padding: 20px;
-   /* Da espacio interno para que no toque los bordes */
    border-radius: 10px;
    box-shadow: 0 5px 15px rgba(163, 163, 163, 0.5);
    margin-right: 20px;
@@ -185,7 +184,6 @@
    gap: 20px;
    background-color: white;
    padding: 20px;
-   /* Da espacio interno para que no toque los bordes */
    border-radius: 10px;
    box-shadow: 0 5px 15px rgba(163, 163, 163, 0.5);
    margin-top: 20px;
@@ -194,7 +192,6 @@
 .row {
    display: flex;
    align-items: center;
-   /* Centra botones y texto verticalmente */
    justify-content: space-between;
 }
 
@@ -203,7 +200,6 @@
    color: #333;
 }
 
-/* Botón "Ver todas" que faltaba en tu CSS */
 .btn {
    border: 2px solid #008DD2;
    color: #008DD2;
@@ -218,9 +214,7 @@
 .row-contacto {
    display: flex;
    align-items: center;
-   /* Alinea la imagen con el nombre */
    gap: 15px;
-   /* Espacio entre imagen y texto */
    color: #555;
    font-weight: bold;
 }
