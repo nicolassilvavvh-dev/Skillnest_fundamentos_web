@@ -62,17 +62,17 @@ function ejercicio2(){
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
 function ejercicio3(){
-    let temperatura = prompt("ingrese la tempatura")
-    if(temperatura <= 10){
+    let temperatura = parseInt(prompt("ingrese la tempatura:"))
+    if(temperatura < 10){
         alert(`Hace frío`);
-    }else if(temperatura > 10 && temperatura <= 24){
+    } else if(temperatura >= 10 && temperatura <= 24){
         alert(`Temperatura agradable`);
-    }else if(temperatura >= 25){
+    } else if(temperatura >= 25 && temperatura <= 35){
         alert(`Hace calor`);
-    }else if(temperatura >= 35){
-        alert(`Temperatura extrema`)
-    }else{
-        alert(`ingresar temperatura valida`)
+    } else if(temperatura > 35 && temperatura < 50){
+        alert(`Temperatura extrema`);
+    } else{
+        alert(`ingresar temperatura valida`);
     }
 }
 // ✅ Ejercicio 4: Verificación de administrador
@@ -87,7 +87,17 @@ function ejercicio3(){
 // Si ambos son correctos → “Bienvenido administrador”
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
-
+function ejercicio4() {
+    let usuario = prompt("Ingrese su nombre de usuario:");
+    let contrasena = prompt("Ingrese su contraseña:")
+    if (usuario === "admin" && contrasena === "12345") { 
+        alert("Bienvenidos Administrador");
+    } else if (usuario === "admin") {
+        alert("Contraseña Incorrecta");
+    } else {
+        alert("Usuario no encontrado");
+    }
+}
 // ✅ Ejercicio 5: Sistema de aprobación
 // 📝 Enunciado
 // Solicitar:
@@ -103,3 +113,17 @@ function ejercicio3(){
 // Además:
 // Si alguna nota es menor a 2.0 mostrar:
 // “Debe asistir a reforzamiento”.
+function ejercicio5(){
+    let nombreEstudiante = prompt("nombre del estudiante: ");
+    let nota1 = parseInt(prompt("ingresa nota: "));
+    let nota2 = parseInt(prompt("ingrese nota: "));
+    let nota3 = parseInt(prompt("ingrese nota: "));
+    let promedio = (nota1 + nota2 + nota3) /3
+    if (promedio >6) {
+        alert(`El estufiante ${nombreEstudiante} tiene un promedio de ${promedio}`)
+    } if (promedio >4) {
+        alert(`El estufiante ${nombreEstudiante} tiene un promedio de ${promedio}`)
+    } if (promedio >2) {
+        alert(`El estufiante ${nombreEstudiante} tiene un promedio de ${promedio}`)
+    }
+}
