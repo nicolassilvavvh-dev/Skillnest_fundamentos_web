@@ -119,11 +119,13 @@ function ejercicio5(){
     let nota2 = parseInt(prompt("ingrese nota: "));
     let nota3 = parseInt(prompt("ingrese nota: "));
     let promedio = (nota1 + nota2 + nota3) /3
-    if (promedio >6) {
-        alert(`El estufiante ${nombreEstudiante} tiene un promedio de ${promedio}`)
-    } if (promedio >4) {
-        alert(`El estufiante ${nombreEstudiante} tiene un promedio de ${promedio}`)
-    } if (promedio >2) {
-        alert(`El estufiante ${nombreEstudiante} tiene un promedio de ${promedio}`)
+    if (promedio >= 6) {
+        alert(`${nombreEstudiante} - Aprobado con excelencia`);
+    } else if (promedio >= 4 && promedio <= 5.9) {
+        alert(`${nombreEstudiante} - Aprobado`);
+    } else {
+        alert(`${nombreEstudiante} - reprobado`);
+    } if (promedio < 2) {
+        alert(`${nombreEstudiante} - Debe asistir a reforzamiento`);
     }
 }
