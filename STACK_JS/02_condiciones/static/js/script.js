@@ -36,20 +36,20 @@ function ejercicio1(){
 // “Acceso permitido”
 // o “Acceso denegado”
 function ejercicio2(){
-    let edad = prompt("Ingrese su edad");;
+    let edad = prompt("Ingrese su edad");
     if (edad > 18){
         alert(`Acceso permitido`)
     } else if(edad < 18 && edad > 0){
-        let permitido = prompt("¿Viene con acompañante?: si/no ")
+        let permitido = prompt("¿Viene con acompañante?: si/no ");
         if (permitido == si){
-            alert("acceso permitido")
+            alert("acceso permitido");
         }else if(permitido == no){
-            alert("acceso denegado")
+            alert("acceso denegado");
         }else{
-            alert("ingrese un valor valido")
+            alert("ingrese un valor valido");
         }
     }else{
-        alert("ingrese valores validos")
+        alert("ingrese valores validos");
     }
 }
 // ✅ Ejercicio 3: Clasificación de temperatura
