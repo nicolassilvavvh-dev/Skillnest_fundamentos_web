@@ -56,9 +56,9 @@ function simularDescuentoProgresivo() {
 function calcularPuntos() {
     let puntosTotales = 0;
     for (let nivel = 1; nivel <= 5; nivel++) {
-        alert(`Nivel ${nivel}
-            \nPuntos acumulados: ${nivel * 50}`)
+        puntosTotales += 50;
     }
+    alert(`Puntos acumulados: ${puntosTotales}`);
 }
 // Puntos acumulados: 250​​
 
