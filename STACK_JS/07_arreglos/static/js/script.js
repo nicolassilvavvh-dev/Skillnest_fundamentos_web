@@ -73,3 +73,16 @@ for(let i=0;i<edades.length;i++)
     }
 }
 
+function ejercicio1(){
+    let edades2 = [15,18,20,14,25];
+    alert(`${edades2.length}, elementos`);
+    alert(`${edades2[0]}, años`);
+    alert(`${edades2[4]}, años`);
+}
+
+function ejercicio2(){
+    let nombres2 = ["Sans", "Papyrus", "Frisk", "Undyne", "Flowey"]
+    for (let i = 0; i < nombres2.length; i++) {
+        alert(nombres2[i]);
+    }
+}
