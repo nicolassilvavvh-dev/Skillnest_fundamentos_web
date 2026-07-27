@@ -19,57 +19,55 @@ function pizzaOver(corteza, salsa, quesos, ingredientes) {
     pizza.ingredientes = ingredientes;
     return pizza;
 }
-    let p1 = pizzaOver(
-        "corteza tradiciomal",
-        "salsa tradicional",
-        "mozzarella",
-        ["pepperoni", "salchicha"]
-    );
-    let p2 = pizzaOver(
-        "corteza tradicional",
-        "salsa marina",
-        ["mozzarella", "feta"],
-        ["champiñones","aceitunas", "cebollas",]
-    );
-    let p3 = pizzaOver(
-        "corteza tradicional",
-        "salsa tradicional",
-        "mozzarella",
-        ["champiñones", "cebolla", "aceitunas", "berenjenas"]
-    );
-    let p4 = pizzaOver(
-        "corteza tradicional",
-        "salsa tradicional",
-        "mozzarella",
-        ["jamon","piña"]
-    );
-    alert(`de la primera pizza
-        corteza: ${p1.corteza}
-        salsa: ${p1.salsa}
-        quesos: ${p1.quesos}
-        ingredientes: ${p1.ingredientes.join(" / ")}`);
-    alert(`de la segunda pizza
-        corteza: ${p2.corteza}
-        salsa: ${p2.salsa}
-        quesos: ${p2.quesos.join(" / ")}
-        ingredientes: ${p2.ingredientes.join(" / ")}`);
-    alert(`de la tercera pizza
-        corteza: ${p3.corteza}
-        salsa: ${p3.salsa}
-        quesos: ${p3.quesos}
-        ingredientes: ${p3.ingredientes.join(" / ")}`);
-    alert(`de la cuarta pizza
-        corteza: ${p4.corteza}
-        salsa: ${p4.salsa}
-        quesos: ${p4.quesos}
-        ingredientes: ${p4.ingredientes.join(" / ")
-        }`);
+
+// Creamos una función exclusiva para el botón de las pizzas
+function ejecutarPizzas() {
+    let p1 = pizzaOver("corteza tradicional", "salsa tradicional", "mozzarella", ["pepperoni", "salchicha"]);
+    let p2 = pizzaOver("corteza tradicional", "salsa marina", ["mozzarella", "feta"], ["champiñones","aceitunas", "cebollas"]);
+    let p3 = pizzaOver("corteza tradicional", "salsa tradicional", "mozzarella", ["champiñones", "cebolla", "aceitunas", "berenjenas"]);
+    let p4 = pizzaOver("corteza tradicional", "salsa tradicional", "mozzarella", ["jamon","piña"]);
+
+    alert(`de la primera pizza\ncorteza: ${p1.corteza}\nsalsa: ${p1.salsa}\nquesos: ${p1.quesos}\ningredientes: ${p1.ingredientes.join(" / ")}`);
+    alert(`de la segunda pizza\ncorteza: ${p2.corteza}\nsalsa: ${p2.salsa}\nquesos: ${p2.quesos.join(" / ")}\ningredientes: ${p2.ingredientes.join(" / ")}`);
+    alert(`de la tercera pizza\ncorteza: ${p3.corteza}\nsalsa: ${p3.salsa}\nquesos: ${p3.quesos}\ningredientes: ${p3.ingredientes.join(" / ")}`);
+    alert(`de la cuarta pizza\ncorteza: ${p4.corteza}\nsalsa: ${p4.salsa}\nquesos: ${p4.quesos}\ningredientes: ${p4.ingredientes.join(" / ")}`);
+    
+    // 💻 Muestra en consola como pide el ejercicio
+    console.log({p1, p2, p3, p4});
+}
+
 // 💻 Muestra en consola los objetos de cada pizza creada.
 // Ejemplo de objeto
 // Antes de comenzar con las pizzas, revisemos un ejemplo con sándwiches para entender la lógica:
 // En este caso, has creado un objeto sandwich con diferentes propiedades. Pero, ¿qué pasa si quieres hacer 
 // varios sándwiches sin escribir todo manualmente cada vez? Puedes crear una fábrica de sándwiches usando una 
 // función que devuelva un objeto:
+function sandwichFactory(pan, proteina, queso, salsas) {
+    let sandwich = {};
+    sandwich.pan = pan;
+    sandwich.proteina = proteina;
+    sandwich.queso = queso;
+    sandwich.salsas = salsas;
+    return sandwich;
+}
+
+// Creamos una función exclusiva para el botón de los sándwiches
+function ejecutarSandwiches() {
+    let s1 = sandwichFactory("trigo", "pavo", "provolone", ["mostaza", "cebolla frita", "rúcula"]);
+    let s2 = sandwichFactory("masa madre", "pollo", "chedar", ["ketchup","mayonesa"]);
+
+    alert(`Ingredientes del primer sándwich:
+        \npan: ${s1.pan}
+        \nproteína: ${s1.proteina}
+        \nqueso: ${s1.queso}
+        \nsalsas: ${s1.salsas.join(" / ")}`);
+    alert(`Ingredientes del segundo sándwich:
+        \npan: ${s2.pan}\nproteína: ${s2.proteina}
+        \nqueso: ${s2.queso}
+        \nsalsas: ${s2.salsas.join(" / ")}`);
+    
+    console.log({s1, s2});
+}
 
 // Explicación
 // 🥪 La función sandwichFactory permite crear objetos con diferentes combinaciones de ingredientes.
