@@ -24,5 +24,5 @@ function cambiarColor2() {
 
 let boton = document.getElementById("colorButton3");
 boton.addEventListener("click", function () {
-    this.innerText = "!Texto cambiado¡"
+    this.innerText = "¡Texto cambiado!"
 })
