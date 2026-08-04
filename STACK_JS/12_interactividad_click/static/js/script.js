@@ -1,28 +1,37 @@
 console.log("prueba de conexion");
 
 document.getElementById("colorButton").addEventListener("click", function () {
-    cambiarColor();
+    cambiarColorBody();
 });
 
-// Función que cambia el color de fondo al hacer clic
-function cambiarColor() {
-    let colores = ["#ff6347", "#66cdaa", "#9370db", "#ffd700", "#4682b4", "#ffa07a", "crimson"];
-    let colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
-    document.body.style.backgroundColor = colorAleatorio;
-}
 
 document.getElementById("colorButton2").addEventListener("click", function () {
-    cambiarColor2();
+    cambiarColorCaja1();
 });
 
-// Función que cambia el color de las letras al hacer clic
-function cambiarColor2() {
+
+document.getElementById("colorButton3").addEventListener("click", function () {
+    cambiarColorCaja2();
+});
+
+
+function cambiarColorBody() {
     let colores = ["#ff6347", "#66cdaa", "#9370db", "#ffd700", "#4682b4", "#ffa07a", "crimson"];
     let colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
-    document.body.style.color = colorAleatorio;
+    let elemento = document.querySelector("body")
+    elemento.style.backgroundColor = colorAleatorio;
 }
 
-let boton = document.getElementById("colorButton3");
-boton.addEventListener("click", function () {
-    this.innerText = "¡Texto cambiado!"
-})
+function cambiarColorCaja1() {
+    let colores = ["#ff6347", "#66cdaa", "#9370db", "#ffd700", "#4682b4", "#ffa07a", "crimson"];
+    let colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+    const elemento = document.querySelector(`#caja1`);
+    elemento.style.backgroundColor =colorAleatorio
+}
+
+function cambiarColorCaja2() {
+    let colores = ["#ff6347", "#66cdaa", "#9370db", "#ffd700", "#4682b4", "#ffa07a", "crimson"];
+    let colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+    const elemento = document.querySelector(`#caja2`);
+    elemento.style.backgroundColor =colorAleatorio
+}
