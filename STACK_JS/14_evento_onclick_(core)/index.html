@@ -5,45 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta de usuarios (CORE)</title>
+    <meta name="author" content="Nicolas Perinetti">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
     <header class="barra-navegación">
         <div class="logotipo">Social Blog</div>
-        <div class="barra-busqueda">
-            <p class="espacio">Buscar publicaciones...</p>
-            <input type="text" class="espacio">
-        </div>
+            <input type="text" class="barra-busqueda" placeholder="Buscar publicaciones...">
         <div class="nav">
-            <button class="button hover">Iniciar sesion</button>
+            <button class="button hover" id="IniciarSesion">Iniciar sesion</button>
         </div>
     </header>
 
     <main class="contenedor-principal">
         <section class="columna-izquierda">
             <div class="tarjeta-conexiones">
-                <h2>Fundamentos de JavasScript</h2>
+                <div>
+                    <h2>Fundamentos de JavasScript</h2>
+                </div>
+                <div>
+                    <p><strong>Publicado por:</strong> Carloz Pérez</p>
+                    <p><strong>Fecha:</strong> 02/03/2025</p>
+            </div>
+                <div>
+                    <p>JavasScript es un lenguaje de programacion que se utiliza en el desarrolo web.</p>
+                    <p>Aprende los conceptos básicos para comenzar a programar</p>
+                </div>
+                
+                <div class="boton2">
+                    <button class="btn-gusta" id="btn-like">12 Me gustas</button>
+                </div>
             </div>
 
             <div class="tarjeta-conexiones-2">
-                <h2>Aprende a diseñar con JS</h2>
+                <div>
+                    <h2>Aprende a diseñar con JS</h2>
+                </div>
+                
+                <div>
+                    <p><strong>Publicado por:</strong> Ana Gómez</p>
+                    <p><strong>Fecha:</strong> 01/03/2025</p>
+                </div>
+                <div>
+                    <p>El diseño web esuna parte Fundamental en eldesarrollo de aplicaciones web</p>
+                    <p>Conoce las propiedades de CSS para crear interfaces atractivas</p>
+                </div>
+                <div class="boton2">
+                    <button class="btn-gusta" id="btn-like">30 Me gustas</button>
+                </div>
             </div>
         </section>
 
         <section class="columna-derecha">
             <div class="caja">
                 <div class="descripcion-tarjeta">
-                    <h2 class="algo">¡Bienvenido!</h1>
-                    <h3 class="algo">Explora nuevas publicaciones y conecta</h2>
-                    <h3 class="algo">con otros usuarios</h3>
-                    <div class="boton2">
+                    <div>
+                        <h2 class="color">¡Bienvenido!</h1>
+                    </div>
+                    <div>
+                        <h3 class="color">Explora nuevas publicaciones y conecta</h2>
+                        <h3 class="color">con otros usuarios</h3>
+                    </div>
+                    <div class="boton">
                         <button class="perfil" id="verPerfil">Ver perfil</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>
