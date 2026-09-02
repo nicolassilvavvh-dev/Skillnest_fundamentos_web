@@ -1,0 +1,136 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+.body{
+   background-color: rgb(197, 197, 197);
+}
+.barra-navegación {
+   display: flex;
+   justify-content: space-between;
+   background-color: #4A3F35;
+   align-items: center;
+   padding: 20px 40px;
+   box-shadow: 0 1px 3px gray;
+   color: white;
+}
+
+
+.logotipo {
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.nav a {
+   text-decoration: none;
+   color: white;
+   font-weight: 500;
+}
+
+.hover {
+   transition: transform 0.3s ease, margin-left 1s ease
+}
+
+.hover:hover {
+   transform: scale(1.2);
+   /* .1 añade 10% en tamaño */
+}
+
+.hover2 {
+   transition: transform 0.3s ease, margin-left 1s ease
+}
+.hover2:hover {
+   transform: scale(1.2);
+   /* .1 añade 10% en tamaño */
+}
+
+.contenedor-principal {
+   height: 520px;
+   width: 700px;
+   box-shadow: 0 0 4px 4px rgb(190, 189, 189);
+   margin-top: 40px;
+   border-radius: 10px;
+   margin-left: 300px;
+   display: flex;
+   flex-direction: column;
+}
+
+.contenedor-imagen {
+   display: flex;
+   height: 400px;
+   width: 660px;
+   background-color:#D9C7B8 ;
+   margin-top: 20px;
+   border-radius: 10px;
+   margin-left: 20px;
+   justify-content: center;
+}
+
+.button{
+   cursor: pointer;
+   background-color: #D9C7B8;
+   color: black;
+   border-radius: 40px;
+   height: 30px;
+   width: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+}
+
+.barra-busqueda{
+   cursor: pointer;
+   background-color: white;
+   color: gray;
+   border-radius: 40px;
+   height: 30px;
+   width: 600px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   border: none;
+   font-size: 1.0rem;
+   padding: 0 15px;
+}
+
+.imagen{
+   height:390px ;
+   width: 655px;
+   margin: 5px 5px 5px;
+   border-radius: 10px;
+}
+.letra{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.dark-mode {
+   background-color: black;
+   color: white;
+}
+
+#modoBtn {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 15px;
+   font-size: 16px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+#modoBtn:hover {
+   background-color: #45a049;
+}

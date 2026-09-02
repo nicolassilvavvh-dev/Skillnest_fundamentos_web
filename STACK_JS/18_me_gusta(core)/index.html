@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me gusta(CORE)</title>
+    <meta name="author" content="Nicolas Perinetti">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header class="barra-navegación">
+        <div class="logotipo">Social like</div>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="columna-izquierda">
+            <div class="caja">
+                <div class="descripcion-tarjeta">
+                    <div>
+                        <img src="static/images/images.png" class="misato" alt="misato">
+                    </div>
+                    <div>
+                        <h2 class="color">Misato</h2>
+                    </div>
+                    <div class="boton">
+                        <button class="perfil" id="verPerfil">Mi perfil</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="columna-derecha">
+            <div class="texto">
+                <h2>Ultimas publicaciones</h2>
+            </div>
+            <div class="tarjeta-publicacion">
+                <div class="encabezado-tarjeta">
+                    <h2>Rei</h2>
+                    <div class="seccion-likes">
+                        <span id="contador-1">0 like(s)</span>
+                        <button class="btn-like" id="btn-1">Like</button>
+                    </div>
+                </div>
+                <p>Acabo de configurar este nuevo <a href="#">bot de Discrod</a>, cuéntame que opinan
+                    ustedes.</p>
+            </div>
+
+            <!-- Publicación 2 -->
+            <div class="tarjeta-publicacion">
+                <div class="encabezado-tarjeta">
+                    <h2>Asuka</h2>
+                    <div class="seccion-likes">
+                        <span id="contador-2">0 like(s)</span>
+                        <button class="btn-like" id="btn-2">Like</button>
+                    </div>
+                </div>
+                <p>Acabo de leer este <a href="#">nuevo comic</a>. Denle un vistazo.</p>
+            </div>
+
+            <!-- Publicación 3 -->
+            <div class="tarjeta-publicacion">
+                <div class="encabezado-tarjeta">
+                    <h2>Shinji</h2>
+                    <div class="seccion-likes">
+                        <span id="contador-3">0 like(s)</span>
+                        <button class="btn-like" id="btn-3">Like</button>
+                    </div>
+                </div>
+                <p>No puedo dejar de escuchar este <a href="#">album</a>. ¿A quién más le gusta?</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
