@@ -9,7 +9,6 @@ body {
    background-color: #e5e5e5;
 }
 
-/* Header */
 .barra-navegacion {
    display: flex;
    justify-content: space-between;
@@ -80,7 +79,6 @@ body {
    font-weight: bold;
 }
 
-/* Sección de Categorías */
 .seccion-categorias {
    display: flex;
    justify-content: center;
@@ -108,7 +106,6 @@ body {
    color: #333;
 }
 
-/* Layout Principal */
 .contenedor-principal {
    display: flex;
    gap: 25px;
@@ -116,7 +113,6 @@ body {
    margin: 0 auto 40px auto;
 }
 
-/* Banner Promocional (Izquierda) */
 .columna-izquierda {
    flex: 3;
 }
@@ -169,7 +165,6 @@ body {
    border-radius: 4px;
 }
 
-/* Recomendados (Derecha) */
 .columna-derecha {
    flex: 1;
    display: flex;
