@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TacoPalace</title>
+    <meta name="author" content="Nicolas Perinetti">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="barra-navegacion">
+        <div class="logotipo">
+            <img src="static/images/logo.png" alt="Logo TacoPalace">
+            <h1><span class="amarillo">Taco</span>Palace</h1>
+        </div>
+        <div class="nav">
+            <input type="text" class="barra-busqueda" id="inputEmail" placeholder="Email">
+            <button class="btn-like" id="btnLogin">login</button>
+            <div class="carrito-contenedor">
+                <img src="static/images/carrito.png" alt="Carrito" class="icono-carrito">
+                <span class="contador-carrito" id="contador1">0</span>
+            </div>
+        </div>
+    </header>
+    <section class="seccion-categorias">
+        <div class="item-categoria">
+            <img src="static/images/enchiladas.jpg" alt="Enchiladas">
+            <p>Enchiladas</p>
+        </div>
+        <div class="item-categoria">
+            <img src="static/images/tacos.jpg" alt="Tacos">
+            <p>Tacos</p>
+        </div>
+        <div class="item-categoria">
+            <img src="static/images/flautas.jpg" alt="Flautas">
+            <p>Flautas</p>
+        </div>
+        <div class="item-categoria">
+            <img src="static/images/gorditas.jpg" alt="Gorditas">
+            <p>Gorditas</p>
+        </div>
+        <div class="item-categoria">
+            <img src="static/images/tostadas.jpg" alt="Tostadas">
+            <p>Tostadas</p>
+        </div>
+        <div class="item-categoria">
+            <img src="static/images/enfrijoladas.jpg" alt="Enfrijoladas">
+            <p>Enfrijoladas</p>
+        </div>
+    </section>
+    <main class="contenedor-principal">
+        <section class="columna-izquierda">
+            <div class="banner-promo">
+                <div class="texto-promo">
+                    <h2>La mejor variedad en platillos de comida <strong>mexicana</strong></h2>
+                    <p>Contamos con <a href="#">servicio</a> a <span class="naranja">domicilio</span></p>
+                </div>
+                <div class="imagen-promo">
+                    <img src="static/images/comida-mexicana.jpg" id="comida" alt="Comida Mexicana">
+                </div>
+            </div>
+        </section>
+        <section class="columna-derecha">
+            <h2 class="titulo-seccion">Recomendados:</h2>
+            <div class="tarjeta-recomendado">
+                <img src="static/images/orden-tacos.jpg" alt="Orden de Tacos" class="imagen-platillo">
+                <div class="pie-tarjeta">
+                    <div>
+                        <p class="nombre-platillo">Orden de Tacos</p>
+                        <a href="#" class="enlace-mas">Ver Más...</a>
+                    </div>
+                    <button class="btn-agregar" id="tacos">+</button>
+                </div>
+            </div>
+            <div class="tarjeta-recomendado">
+                <img src="static/images/orden-flautas.jpg" alt="Orden de Flautas" class="imagen-platillo">
+                <div class="pie-tarjeta">
+                    <div>
+                        <p class="nombre-platillo">Orden de Flautas</p>
+                        <a href="#" class="enlace-mas">Ver Más...</a>
+                    </div>
+                    <button class="btn-agregar" id="flautas">+</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
