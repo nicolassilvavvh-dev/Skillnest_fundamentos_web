@@ -19,7 +19,6 @@ body {
    background: #f5f5f5;
 }
 
-
 /* ================================
    VARIABLES
 ================================ */
@@ -32,7 +31,6 @@ body {
    --blanco: #ffffff;
    --negro: #222;
 }
-
 
 /* ================================
    ELEMENTOS GENERALES
@@ -48,116 +46,9 @@ input {
    font: inherit;
 }
 
-/* ================================
-   MAIN
-================================ */
-
 main {
    width: 100%;
 }
-
-
-/* ================================
-   HERO
-================================ */
-
-.hero {
-   width: 90%;
-   max-width: 100px;
-   margin: 20px auto;
-   padding: 20px;
-   background-color: var(--blanco);
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   gap: 20px;
-   border-radius: 12px;
-}
-
-
-/* TEXTO HERO */
-
-.hero-texto {
-   flex: 1 1 300px;
-}
-
-.subtitulo {
-   color: var(--azul);
-   font-size: 0.8rem;
-   font-weight: bold;
-   letter-spacing: 2px;
-   margin-bottom: 8px;
-}
-
-.hero h1 {
-   font-size: clamp(2rem, 5vw, 4rem);
-   line-height: 1.1;
-   margin-bottom: 20px;
-}
-
-.hero-texto>p:not(.subtitulo) {
-   color: var(--gris);
-   max-width: 550px;
-   margin-bottom: 25px;
-}
-
-
-/* BOTONES HERO */
-
-.hero-botones {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 12px;
-}
-
-.btn {
-   display: inline-block;
-   padding: 12px 20px;
-   border-radius: 6px;
-   font-weight: bold;
-}
-
-.btn-principal {
-   background-color: var(--azul);
-   color: white;
-}
-
-.btn-secundario {
-   border: 1px solid var(--azul);
-   color: var(--azul);
-}
-
-
-/* IMAGEN HERO */
-
-.hero-imagen {
-   flex: 1 1 300px;
-   min-width: 0;
-}
-
-.imagen-placeholder {
-   min-height: 280px;
-   width: 100%;
-   background-color: #dcecff;
-   border: 2px dashed #7aaeea;
-   border-radius: 10px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   gap: 8px;
-   color: #4778ae;
-}
-
-.imagen-placeholder span {
-   font-size: 0.8rem;
-   letter-spacing: 2px;
-}
-
-.imagen-placeholder strong {
-   font-size: 1.4rem;
-}
-
 
 /* ================================
    DESTINOS
@@ -169,37 +60,29 @@ main {
    margin: 40px auto;
 }
 
-
 /* ENCABEZADO SECCIÓN */
 
 .section-header {
-   margin-bottom: 30px;
-   display: flex;
-   align-items: end;
-   flex-wrap: wrap;
-   gap: 10px;
-   
+   margin-bottom: 24px;
 }
 
 .section-header h2 {
    font-size: 2rem;
 }
 
-.section-header>p {
-   max-width: 400px;
+.section-header p {
+   max-width: 500px;
    color: var(--gris);
 }
-
 
 /* CONTENEDOR TARJETAS */
 
 .destinos {
    display: flex;
    flex-wrap: wrap;
-   gap: 40px;
-   margin-left: 20px;
+   gap: 20px; /* Reducido para que la última tarjeta entre cómodamente */
+   width: 100%;
 }
-
 
 /* TARJETA */
 
@@ -208,16 +91,11 @@ main {
    border-radius: 10px;
    overflow: hidden;
    border: 1px solid #ddd;
-   /*
-      El ancho base es 230px.
-      El elemento puede crecer y reducirse.
-    */
-   flex: 200px;
+   flex: 1 1 210px; /* Permite adaptarse al espacio de forma uniforme */
    min-width: 0;
    display: flex;
    flex-direction: column;
 }
-
 
 /* IMAGEN TARJETA */
 
@@ -231,41 +109,26 @@ main {
    letter-spacing: 2px;
 }
 
-
-/*
-   Estos fondos representan
-   distintos destinos.
-*/
-
 .torres {
-   background: linear-gradient(135deg,
-         #31566d,
-         #9dc5d8);
+   background: linear-gradient(135deg, #31566d, #9dc5d8);
 }
 
 .cusco {
-   background: linear-gradient(135deg,
-         #8d6549,
-         #d9b88f);
+   background: linear-gradient(135deg, #8d6549, #d9b88f);
 }
 
 .cancun {
-   background: linear-gradient(135deg,
-         #1594b6,
-         #8de2ed);
+   background: linear-gradient(135deg, #1594b6, #8de2ed);
 }
 
 .madrid {
-   background: linear-gradient(135deg,
-         #75616a,
-         #d6a8b1);
+   background: linear-gradient(135deg, #75616a, #d6a8b1);
 }
-
 
 /* CONTENIDO */
 
 .card-contenido {
-   padding: 10px;
+   padding: 16px;
    display: flex;
    flex-direction: column;
    gap: 8px;
@@ -286,7 +149,6 @@ main {
    color: var(--gris);
 }
 
-
 /* BOTÓN VER MÁS */
 
 .btn-ver-mas {
@@ -304,84 +166,11 @@ main {
    opacity: 0.9;
 }
 
-
 /* INFORMACIÓN OCULTA */
 
 .oculto {
    display: none;
 }
-
-
-/* MENSAJE BÚSQUEDA */
-
-.mensaje-busqueda {
-   margin-top: 20px;
-   font-weight: bold;
-   color: var(--azul);
-}
-
-
-/* ================================
-   INFORMACIÓN
-================================ */
-
-.info-section {
-   width: 90%;
-   max-width: 1000px;
-   margin: 60px auto;
-   padding: 40px;
-   background-color: var(--azul-claro);
-   border-radius: 12px;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 40px;
-}
-
-.info-bloque {
-   flex: 1 1 300px;
-}
-
-.info-bloque h2 {
-   font-size: 2rem;
-   margin-bottom: 15px;
-}
-
-.info-bloque p:last-child {
-   color: var(--gris);
-   max-width: 500px;
-}
-
-
-/* BENEFICIOS */
-
-.beneficios {
-   flex: 1 1 400px;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 15px;
-}
-
-.beneficio {
-   flex: 1 1 150px;
-   padding: 20px;
-   background-color: white;
-   border-radius: 8px;
-}
-
-.beneficio span {
-   color: var(--azul);
-   font-weight: bold;
-}
-
-.beneficio h3 {
-   margin: 8px 0;
-}
-
-.beneficio p {
-   color: var(--gris);
-   font-size: 0.9rem;
-}
-
 
 /* ================================
    FOOTER
@@ -391,30 +180,10 @@ main {
    background-color: white;
    color: black;
    padding: 40px 5% 20px;
+   margin-top: 40px;
 }
 
-.footer-contenido {
+.footer-bottom {
    max-width: 1200px;
    margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 40px;
 }
-
-
-/* ================================
-   RESPONSIVIDAD
-   SIN MEDIA QUERIES
-================================ */
-
-/*
-   La responsividad depende principalmente de:
-
-   display: flex;
-   flex-wrap: wrap;
-   flex: 1 1;
-   min-width;
-   max-width;
-   width: 100%;
-   gap;
-*/
